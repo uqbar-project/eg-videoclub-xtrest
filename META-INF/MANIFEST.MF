@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Application-Name: eg-videoclub-xtrest
+Sealed: true
+Main-Class: org.uqbar.peliculas.PeliculasController
+
