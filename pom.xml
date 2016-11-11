@@ -32,9 +32,6 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<!-- <descriptors> -->
-					<!-- <descriptor>src/main/assembly/src.xml</descriptor> -->
-					<!-- </descriptors> -->
 				</configuration>
 				<executions>
 					<execution>
