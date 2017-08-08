@@ -4,6 +4,7 @@ import org.uqbar.xtrest.api.Result
 import org.uqbar.xtrest.api.XTRest
 import org.uqbar.xtrest.api.annotation.Controller
 import org.uqbar.xtrest.api.annotation.Get
+import org.uqbar.xtrest.http.ContentType
 import org.uqbar.xtrest.json.JSONUtils
 
 /**
@@ -15,11 +16,12 @@ class PeliculasController {
 	
 	@Get("/videoclub-ui-grails-homes-xtend/peliculas/:tituloContiene")
 	def Result buscarPeliculas() {
+		response.contentType = ContentType.APPLICATION_JSON
 		ok(VideoClub.getInstance.buscar(tituloContiene).toJson)
 	}
 	
 	def static void main(String[] args) {
-		XTRest.start(PeliculasController, 8080)
+		XTRest.start(8080, PeliculasController)
 	}
 	
 }

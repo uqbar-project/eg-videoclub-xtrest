@@ -1,1 +1,6 @@
 /target/
+*generated*
+.classpath
+.project
+bin
+
