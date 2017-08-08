@@ -1,6 +1,8 @@
 /target/
-*generated*
+generated-sources
 .classpath
 .project
 bin
+*xtend-gen*
+.settings*
 

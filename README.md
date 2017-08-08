@@ -6,4 +6,22 @@
 
 Servicios REST que realizan una búsqueda por título de una serie de películas.
 
+## Modo de uso
+
+### Cómo levantar
+
+#### Opción A: Desde Eclipse
+
+1. Importar este proyecto en Eclipse como **Maven project**.
+2. Ejecutar `org.uqbar.peliculas.PeliculasController`, que levanta el servidor en el puerto 8080 (no debe haber otro servidor corriendo previamente o aparecerá el mensaje de error `Address already in use: JVM_Bind`).
+
+#### Opción B: Desde línea de comandos
+
+1. Generar jar con dependencias: `mvn clean compile assembly:single`
+2. Ejecutar el jar generador: `java -jar target/videoclub-xtrest-0.0.1-SNAPSHOT-jar-with-dependencies.jar`
+
+Esta opción requiere menos recursos de sistema porque no es necesario ejecutar Eclipse.
+
+### Cómo probar
+
 Ej: http://localhost:8080/videoclub-ui-grails-homes-xtend/peliculas/Vo
