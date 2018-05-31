@@ -8,6 +8,7 @@ import org.eclipse.xtend.lib.annotations.Accessors
  */
 class VideoClub {
 	val List<Pelicula> peliculas
+	
 	new() {
 		val cienciaFiccion = new Genero("Ciencia Ficcion")
 		val belica = new Genero("Belica")

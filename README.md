@@ -17,8 +17,17 @@ Servicios REST que realizan una búsqueda por título de una serie de películas
 
 #### Opción B: Desde línea de comandos
 
-1. Generar jar con dependencias: `mvn clean compile assembly:single`
-2. Ejecutar el jar generador: `java -jar target/videoclub-xtrest-0.0.1-SNAPSHOT-jar-with-dependencies.jar`
+1. Generar jar con dependencias: 
+
+```bash
+mvn clean compile assembly:single
+```
+
+2. Ejecutar el jar generador: 
+
+ ```
+ java -jar target/videoclub-xtrest-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+ ```
 
 Esta opción requiere menos recursos de sistema porque no es necesario ejecutar Eclipse.
 
